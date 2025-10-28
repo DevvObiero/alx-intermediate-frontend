@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body class="p-4">
+    <header class="bg-blue-500 text-white p-4 text-center">
+        <h1 class="text-3xl font-bold">Grid and Flexbox Layout + Image Gallery</h1>
+    </header>
+
+    <!-- Main layout -->
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+        <section class="lg:col-span-2 flex">
+            <div class="p-4 w-1/2 bg-red-200">Flexbox Item 1</div>
+            <div class="p-4 w-1/2 bg-red-400">Flexbox Item 2</div>
+        </section>
+
+        <aside class="bg-green-200 p-4">Sidebar</aside>
+    </main>
+
+    <!-- New Image Gallery section -->
+    <section class="mt-8">
+        <h2 class="text-2xl font-semibold mb-4 text-center">Image Gallery</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <img src="https://images.pexels.com/photos/11167638/pexels-photo-11167638.jpeg" alt="Gallery Image 1"
+                class="w-full h-64 object-cover rounded-lg shadow">
+            <img src="https://images.pexels.com/photos/11167645/pexels-photo-11167645.jpeg" alt="Gallery Image 2"
+                class="w-full h-64 object-cover rounded-lg shadow">
+            <img src="https://images.pexels.com/photos/2387532/pexels-photo-2387532.jpeg" alt="Gallery Image 3"
+                class="w-full h-64 object-cover rounded-lg shadow">
+            <img src="https://images.pexels.com/photos/2387533/pexels-photo-2387533.jpeg" alt="Gallery Image 4"
+                class="w-full h-64 object-cover rounded-lg shadow">
+            <img src="https://images.pexels.com/photos/3178786/pexels-photo-3178786.jpeg" alt="Gallery Image 5"
+                class="w-full h-64 object-cover rounded-lg shadow">
+            <img src="https://images.pexels.com/photos/34457272/pexels-photo-34457272.jpeg" alt="Gallery Image 6"
+                class="w-full h-64 object-cover rounded-lg shadow">
+        </div>
+    </section>
+
+
+    <footer class="bg-gray-800 text-white p-4 mt-8 text-center">
+        <p>&copy; 2025 Paul Obiero's Blog</p>
+    </footer>
+</body>
+
+</html>
